@@ -13,3 +13,4 @@ tensorflow==1.15.0
 beautifulsoup4==4.8.0
 requests==2.23.0
 pandas==0.25.1
+tensorboard==1.15.0
