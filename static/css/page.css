@@ -1,0 +1,38 @@
+
+#cont{
+    height: 250px !important;
+    width: 90%;
+    overflow: scroll;
+    background-color:azure !important;
+    box-shadow: 5px 5px 5px rgb(245, 246, 247);
+    border-radius: 20px;
+}
+
+#chattext{
+    
+}
+
+#chatbotimage{
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#inner_chat_for_bot{
+    display: flex;
+    float: left;
+    height: 20px;
+    bottom: 200px;
+    position: absolute;
+}
+#inner_chat_for_client{
+    display: table;
+    float: right;
+    flex-direction: column;
+    height: 20px;
+    bottom: 180px;
+    position: absolute;
+}
+
+.sidebyside{
+    display: flex;
+}

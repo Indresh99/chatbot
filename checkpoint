@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/indresh/Desktop/sample/heroku/model.tflearn"
+all_model_checkpoint_paths: "/Users/indresh/Desktop/sample/heroku/model.tflearn"
