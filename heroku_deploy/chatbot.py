@@ -8,12 +8,12 @@ import json
 from bs4 import BeautifulSoup
 import requests
 from io import BytesIO
-from PIL import Image
-from matplotlib.pyplot import imshow
+# from PIL import Image
+# from matplotlib.pyplot import imshow
 import numpy as np
-from IPython.display import display 
+# from IPython.display import display 
 import pandas as pd
-import pickle
+# import pickle
 import os
 from heroku.settings import BASE_DIR
 
@@ -148,9 +148,9 @@ def activate_bot(msg):
                 link = scrap()
                 print(link)
                 response = requests.get(link)
-                img = Image.open(BytesIO(response.content))
+                # img = Image.open(BytesIO(response.content))
     #             imshow(np.asarray(img))
-                display(img)
+                # display(img)
                 return link
     #             print(img)
             else:

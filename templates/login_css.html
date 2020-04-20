@@ -9,7 +9,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <!-- <link rel="stylesheet" type="text/css" href="/static/css/page.css"> -->
 
-
+    
 
 
   </head>
@@ -23,6 +23,7 @@
       background-color:azure !important;
       box-shadow: 5px 5px 5px rgb(245, 246, 247);
       border-radius: 20px;
+      position: relative;
     }
 
     #chattext{
@@ -42,12 +43,15 @@
       position: absolute;
     }
     #inner_chat_for_client{
-      display: table;
-      float: right;
-      flex-direction: column;
-      height: 20px;
-      bottom: 180px;
-      position: absolute;
+      display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    /* height: 100px !important; */
+    /* display: table; */
+    /* background: red; */
+    /* position: absolute; */
+    bottom: 0px;
+    width: 100%;
     }
 
     .sidebyside{
@@ -371,9 +375,6 @@
                               
                           </div>
                           <div id="cont">
-                            <div id="inner_chat_for_bot">
-                            
-                            </div>
                             <div class="inner_chat_for_client" id="inner_chat_for_client">
                               
                             </div>
@@ -387,7 +388,7 @@
                             <input id="msg" class="txtboxtocheck" type="text" placeholder="Start to talk!" name="msgs">
                             <br>
                             <br>
-                            <button class="btn btn-light" value="SUBMIT" type="submit">SEND</button>
+                            <button id="button_send" class="btn btn-light" value="SUBMIT" type="submit">SEND</button>
                             <br>
                             <br>
                           </form>
@@ -418,11 +419,12 @@
             }
       ).done(function(response){
         result = $(".para", response).text();
-        
         $('.inner_chat_for_client').append('<div class="sidebyside"><img id="chatbotimage" height="30px" width="30px" src="/static/img/bot_image.png" alt="Avatar"><p id="chattext">'+result+'</p></div>');
+        document.getElementById('#cont').scrollTop = 9999999;
 
       });
   }); 
+
   </script>
 </html>
 
