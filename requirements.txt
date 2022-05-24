@@ -9,7 +9,7 @@ whitenoise==5.0.1
 nltk==3.4.5
 numpy==1.17.2
 tflearn==0.3.2
-tensorflow==1.15.0
+tensorflow==2.6.4
 beautifulsoup4==4.8.0
 requests==2.23.0
 pandas==0.25.1
